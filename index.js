@@ -23,8 +23,10 @@ window.onscroll = function () {
 
         main_menu_style_top = "40vw"
     }
-
-    main_menu.style.top = main_menu_style_top
+    
+    if (window.matchMedia("(max-width: 1000px)").matches){
+        main_menu.style.top = main_menu_style_top;
+    }
     
 };
 
