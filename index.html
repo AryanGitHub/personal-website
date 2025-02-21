@@ -81,10 +81,10 @@
         </div>
     </div>
 
-    <div class="main-menu">
+    <div id="main-menu-id" class="main-menu">
 
 
-        <a href="/personal-website/index.html" class="main-menu-item">
+        <a href="/index.html" class="main-menu-item">
             <img class="main-menu-item-icon" src="main-menu-icons/house.svg">
             <p class="main-menu-item-text">Home</p>
         </a>
@@ -94,7 +94,7 @@
             <p class="main-menu-item-text">Badges & Certifications</p>
         </div> -->
 
-        <a href="/personal-website/projects.html" class="main-menu-item">
+        <a href="/projects.html" class="main-menu-item">
             <img class="main-menu-item-icon" src="main-menu-icons/projects.svg">
             <p class="main-menu-item-text">Projects</p>
         </a>
@@ -104,7 +104,7 @@
             <p class="main-menu-item-text">Blogs</p>
         </div> -->
 
-        <a href="/personal-website/contact.html" class="main-menu-item">
+        <a href="/contact.html" class="main-menu-item">
             <img class="main-menu-item-icon" src="main-menu-icons/contact.svg">
             <p class="main-menu-item-text">Contact</p>
         </a>
@@ -168,26 +168,7 @@
 
     </div>
 
-    <script>
-        window.onscroll = function () {
-            const header = document.getElementById("header");
-            const first_name = document.getElementById("first-name");
-            const last_name = document.getElementById("last-name");
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                header.classList.add("shrink-info-bar");
-                first_name.classList.add("shrink-title-name");
-                last_name.classList.add("shrink-title-name");
-                last_name.classList.add("shrink-last-name");
-
-            } else {
-                header.classList.remove("shrink-info-bar");
-                first_name.classList.remove("shrink-title-name");
-                last_name.classList.remove("shrink-title-name");
-                last_name.classList.remove("shrink-last-name");
-            }
-        };
-
-    </script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

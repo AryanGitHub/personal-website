@@ -34,7 +34,7 @@
         align-items: center;
         justify-content: center;
 
-        transition: height 0.25s;
+        transition: height 0.5s;
     }
 
 
@@ -71,7 +71,17 @@
         margin-left: 2%;
 
         height: 4vw;
+        cursor: pointer;
 
+        transition: opacity 0.125s;
+
+    }
+
+    .main-menu-button:hover{
+        opacity: 0.7;
+    }
+    .main-menu-button:active{
+        opacity: 0.3;
     }
 
     .main-menu-button-icon {
@@ -90,13 +100,14 @@
     .full-name {
         flex: 1;
         text-align: center;
-        transition: display 0.25s;
+        
     }
 
     .full-name .first-name,
     .full-name .last-name {
         color: aliceblue;
         font-size: 10vw;
+        transition: display 0.5s;
     }
 
     .contact-info-div {
@@ -159,6 +170,42 @@
 
     .main-menu {
         display: none;
+    }
+
+    .main-menu-mobile{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        background-color: #181f2a;
+    
+        display: flex;
+        flex-direction: column;
+        
+        
+
+        z-index: 200;
+    }
+
+    .main-menu-item-mobile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 4.5vw;
+        margin-top: 10%;
+
+        text-decoration: none;
+        transition: height 0.5s;
+    }
+
+    .main-menu-item-icon{
+        height: 100%;
+        margin-left: 2%;
+    }
+
+    .main-menu-item-text{
+        margin-left: 5%;
     }
 
     /*
